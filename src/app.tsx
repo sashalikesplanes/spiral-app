@@ -5,7 +5,7 @@ import { routes } from './routes';
 
 const App: Component = () => {
   const location = useLocation();
-  const Route = useRoutes(routes);
+  const Routes = useRoutes(routes);
 
   return (
     <>
@@ -40,7 +40,7 @@ const App: Component = () => {
       </nav>
 
       <main>
-        <Route />
+        <Routes />
       </main>
     </>
   );
