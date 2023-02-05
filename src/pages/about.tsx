@@ -1,8 +1,8 @@
+import { useRouteData } from 'solid-app-router';
 import { Component, createEffect, Suspense } from 'solid-js';
-import { useData } from 'solid-app-router';
 
 export default function About() {
-  const name = useData<() => string>();
+  const name = useRouteData<() => string>();
 
   createEffect(() => {
     console.log(name());
@@ -17,7 +17,7 @@ export default function About() {
       <p>
         <span>We love</span>
         <Suspense fallback={<span>...</span>}>
-          <span>&nbsp;{name()}</span>
+          <span>{name()}</span>
         </Suspense>
       </p>
     </section>
