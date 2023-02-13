@@ -8,7 +8,7 @@ const App: Component = () => {
   const Routes = useRoutes(routes);
 
   return (
-    <div class="flex flex-col h-full bg-gray-700">
+    <div class="flex flex-col h-full bg-black">
       <main class="flex-1 h-fit">
         <Routes />
       </main>

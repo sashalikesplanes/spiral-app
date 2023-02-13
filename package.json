@@ -6,9 +6,10 @@
     "dev": "vite & yarn pb",
     "build": "vite build",
     "serve": "vite preview",
-    "pb": "./pocketbase/pocketbase serve"
+    "pb": "./pocketbase/pocketbase serve",
+    "ios": "yarn build && yarn cap run ios"
   },
-  "license": "MIT",
+  "license": "WTFPL",
   "devDependencies": {
     "@capacitor/cli": "^3.4.1",
     "typescript": "^4.6.2",
